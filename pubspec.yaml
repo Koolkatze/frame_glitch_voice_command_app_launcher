@@ -1,0 +1,41 @@
+name: frame_glitch_voice_command_app_launcher
+description: "Flutter and Lua Voice command app launcher for Android"
+version: 0.1.0
+homepage:
+repository: https://github.com/Koolkatze/frame_glitch_voice_command_app_launcher
+
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  device_apps: ^2.2.0
+  flutter:
+    sdk: flutter
+  flutter_blue_plus: ^1.32.12
+  image: ^4.2.0
+  logging: ^1.2.0
+  permission_handler: ^11.3.1
+  share_plus: ^10.1.2
+  shared_preferences: ^2.3.3
+  speech_to_text: ^7.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+  - packages/simple_frame_app/lua/battery.min.lua
+  - packages/simple_frame_app/lua/data.min.lua
+  - packages/simple_frame_app/lua/code.min.lua
+  - packages/simple_frame_app/lua/plain_text.min.lua
+  - packages/simple_frame_app/lua/sprite.min.lua
+  - packages/simple_frame_app/lua/camera.min.lua
+  - packages/simple_frame_app/lua/image_sprite_block.min.lua
+  - packages/simple_frame_app/lua/imu.min.lua
+  - packages/simple_frame_app/lua/text_sprite_block.min.lua
+  - assets/frame_app.lua
+  - assets/frame_app_camera.lua
